@@ -49,9 +49,9 @@ def transfer_zipcode_to_city_state(dataframe):
 
 
 def main():
-    dataframe = pd.read_csv('../input/' + data_filename)
+    dataframe = pd.read_csv('../../input/raw/' + data_filename)
     transfer_zipcode_to_city_state(dataframe)
-    dataframe.to_csv('../input/' + data_filename)
+    dataframe.to_csv('../../input/' + data_filename)
 
 
 if __name__ == "__main__":
