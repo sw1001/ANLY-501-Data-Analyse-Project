@@ -19,7 +19,7 @@ The Data Analyse and Mining Project for the course ANLY-501 (COSC-587)
 ## Project Task Introduction
 
 ### Project 2
-> Due on Nov 3th 11:59PM
+> Due on Nov 3rd 11:59PM
 
 1. Basic Statistical Analysis and data cleaning insight (15%)
     - [ ] Determine the mean, median and standard deviation of at least 10 attributes. `(Shawn)`
