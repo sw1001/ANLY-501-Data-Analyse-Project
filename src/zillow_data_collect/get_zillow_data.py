@@ -287,7 +287,7 @@ def main():
                            'pools']
 
     # Read Zpid List
-    data_zpid_list = pd.read_csv('../input/' + house_zpidList_filename)
+    data_zpid_list = pd.read_csv('../../input/raw/' + house_zpidList_filename)
     data_info = data_zpid_list.reindex(columns=house_info_column)
     data_info[house_info_column[1:]] = ""
     data_deep = data_zpid_list.reindex(columns=house_detail_column)
@@ -326,9 +326,9 @@ def main():
     data_update = data_update.merge(data_update_temp, left_on='zpid', right_on='zpid')
 
     # Output File
-    data_info.to_csv('../input/' + house_info_filename, index=False)
-    data_deep.to_csv('../input/' + house_detail_filename, index=False)
-    data_update.to_csv('../input/' + house_updated_filename, index=False)
+    data_info.to_csv('../../input/' + house_info_filename, index=False)
+    data_deep.to_csv('../../input/' + house_detail_filename, index=False)
+    data_update.to_csv('../../input/' + house_updated_filename, index=False)
 
 
 if __name__ == "__main__":

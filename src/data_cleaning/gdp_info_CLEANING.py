@@ -13,7 +13,7 @@ def main():
         that the year and the per_capita_gdp values are appropriate. It also
         cleans rows that are missing data.
     """
-    df = pd.read_csv("gdp_info.csv") #read in the input file into the dataframe.
+    df = pd.read_csv("../../input/raw/gdp_info.csv") #read in the input file into the dataframe.
     df = df.dropna() #dropping the rows with missing observations.
     
     
@@ -21,7 +21,7 @@ def main():
     df = df.drop(df[(df["year"]) > 2017].index) #drop rows where the year is greater than 2017.
     df = df.drop(df[(df["per_capita_gdp"]) < 2000].index) #drop rows where the gdp per capital is very low.
     
-    df.to_csv("gdp_info_CLEANED.csv", sep=",") #Write the resulting dataframe to a csv
+    df.to_csv("../../input/gdp_info_CLEANED.csv", sep=",") #Write the resulting dataframe to a csv
     
     
 if __name__ == "__main__":
