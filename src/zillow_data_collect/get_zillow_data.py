@@ -120,12 +120,15 @@ def get_rows_from_zestimate_zpi(
         # root[2][5][2].text    county_id
         # root[2][5][3].text    state_id
 
-        dataframe.loc[dataframe['zpid'] == zpid, 'latitude'] = root[2][2][4].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'longitude'] = root[2][2][5].text
+        dataframe.loc[dataframe['zpid'] == zpid, 'latitude'] = str(float(root[2][2][4].text) * 1000000)
+        dataframe.loc[dataframe['zpid'] == zpid, 'longitude'] = str(float(root[2][2][5].text) * 1000000)
         dataframe.loc[dataframe['zpid'] == zpid, 'cityid'] = root[2][5][1].text
         dataframe.loc[dataframe['zpid'] == zpid, 'countyid'] = root[2][5][2].text
         dataframe.loc[dataframe['zpid'] == zpid, 'zipcode'] = root[2][5][0].text
         dataframe.loc[dataframe['zpid'] == zpid, 'amount'] = root[2][3][0].text
+        dataframe.loc[dataframe['zpid'] == zpid, 'street'] = root[2][2][0].text
+        dataframe.loc[dataframe['zpid'] == zpid, 'city'] = root[2][2][2].text
+        dataframe.loc[dataframe['zpid'] == zpid, 'state'] = root[2][2][3].text
 
     # dataframe.to_csv('../input/' + HouseInfoFileName, index=False)
     return dataframe
@@ -133,12 +136,14 @@ def get_rows_from_zestimate_zpi(
 
 def get_rows_from_deepsearch_result_api(
         dataframe,
+        datainfo,
         row_start,
         row_end,
         zwisd):
     """
     Open a dataframe, and get the deep search result API from row_start to row_end with address and citystate.
     :param dataframe: The dataframe with zpid, address and citystate
+    :param datainfo: The info data which contains street, city and state
     :param row_start: The row we start to collect data.
     :param row_end: The row we end to collect data
     :param zwisd: The zwisd API KEY
@@ -150,10 +155,13 @@ def get_rows_from_deepsearch_result_api(
 
     for zpid in dataframe.iloc[row_start:row_end]['zpid']:
         # Get response in XML format
+        if datainfo.loc[datainfo['zpid'] == zpid]['street'].empty:
+            continue
+
         response = get_deepsearch_result_api(
             zwisd,
-            dataframe.loc[dataframe['zpid'] == zpid]['street'],
-            dataframe.loc[dataframe['zpid'] == zpid]['city'] + ', ' + dataframe.loc[dataframe['zpid'] == zpid]['state'])
+            datainfo.loc[datainfo['zpid'] == zpid]['street'],
+            datainfo.loc[datainfo['zpid'] == zpid]['city'] + ', ' + datainfo.loc[datainfo['zpid'] == zpid]['state'])
         # Remove namespace for better using.
         contents = re.sub('<!--(.*?)-->', '', str(response.text))
         contents = re.sub(':searchresults+.*xsd/SearchResults.xsd"', '', contents)
@@ -177,18 +185,21 @@ def get_rows_from_deepsearch_result_api(
         # root[2][0][0][9].text     finishedSqFt
         # root[2][0][0][10].text    bathrooms
         # root[2][0][0][11].text    bedrooms
-        # root[2][0][0][2][5].text  latitude
-        # root[2][0][0][2][6].text  longitude
+        # root[2][0][0][2][4].text  latitude
+        # root[2][0][0][2][5].text  longitude
         # root[2][0][0][14][0].text amount
 
-        dataframe.loc[dataframe['zpid'] == zpid, 'bathrooms'] = root[2][0][0][10].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'bedrooms'] = root[2][0][0][11].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'finishedSqFt'] = root[2][0][0][9].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'lotsizeSqFt'] = root[2][0][0][8].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'latitude'] = root[2][0][0][2][5].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'longitude'] = root[2][0][0][2][6].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'yearbuilt'] = root[2][0][0][7].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'amount'] = root[2][0][0][14][0].text
+        try:
+            dataframe.loc[dataframe['zpid'] == zpid, 'bathrooms'] = root[2][0][0][10].text
+            dataframe.loc[dataframe['zpid'] == zpid, 'bedrooms'] = root[2][0][0][11].text
+            dataframe.loc[dataframe['zpid'] == zpid, 'finishedSqFt'] = root[2][0][0][9].text
+            dataframe.loc[dataframe['zpid'] == zpid, 'lotsizeSqFt'] = root[2][0][0][8].text
+            dataframe.loc[dataframe['zpid'] == zpid, 'latitude'] = str(float(root[2][0][0][2][4].text) * 1000000)
+            dataframe.loc[dataframe['zpid'] == zpid, 'longitude'] = str(float(root[2][0][0][2][5].text) * 1000000)
+            dataframe.loc[dataframe['zpid'] == zpid, 'yearbuilt'] = root[2][0][0][7].text
+            dataframe.loc[dataframe['zpid'] == zpid, 'amount'] = root[2][0][0][14][0].text
+        except IndexError:
+            print('Get Deep Search Result API cannot get data with zpid:' + str(zpid))
 
     # dataframe.to_csv('../input/' + HouseInfoFileName, index=False)
     return dataframe
@@ -239,14 +250,16 @@ def get_rows_from_updated_property_details_api(
         # root[2][5][13].text   heatsystemtype
         # root[2][5][11].text   airconditiontype
         # root[2][5][8].text    buildingquality
-
-        dataframe.loc[dataframe['zpid'] == zpid, 'latitude'] = root[2][2][4].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'longitude'] = root[2][2][5].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'units'] = root[2][5][7].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'rooms'] = root[2][5][14].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'heatsystemtype'] = root[2][5][13].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'airconditiontype'] = root[2][5][11].text
-        dataframe.loc[dataframe['zpid'] == zpid, 'buildingquality'] = root[2][5][8].text
+        try:
+            dataframe.loc[dataframe['zpid'] == zpid, 'latitude'] = str(float(root[2][2][4].text) * 1000000)
+            dataframe.loc[dataframe['zpid'] == zpid, 'longitude'] = str(float(root[2][2][5].text) * 1000000)
+            dataframe.loc[dataframe['zpid'] == zpid, 'units'] = root[2][5][7].text
+            dataframe.loc[dataframe['zpid'] == zpid, 'rooms'] = root[2][5][14].text
+            dataframe.loc[dataframe['zpid'] == zpid, 'heatsystemtype'] = root[2][5][13].text
+            dataframe.loc[dataframe['zpid'] == zpid, 'airconditiontype'] = root[2][5][11].text
+            dataframe.loc[dataframe['zpid'] == zpid, 'buildingquality'] = root[2][5][8].text
+        except IndexError:
+            print('Get Updated Property API cannot get data with zpid:' + str(zpid))
 
         # dataframe.to_csv('../input/' + HouseInfoFileName, index=False)
 
@@ -265,7 +278,10 @@ def main():
                          'cityid',
                          'countyid',
                          'zipcode',
-                         'amount']
+                         'amount',
+                         'street',
+                         'city',
+                         'state']
 
     house_detail_column = ['zpid',
                            'bathrooms',
@@ -278,7 +294,7 @@ def main():
                            'yearbuilt',
                            'amount']
 
-    house_update_column = ['zpid,',
+    house_update_column = ['zpid',
                            'rooms',
                            'units',
                            'airconditiontype',
@@ -296,34 +312,34 @@ def main():
     data_update[house_update_column[1:]] = ""
 
     # Get Info Data
-    data_info_temp = get_rows_from_zestimate_zpi(data_info, 1000, 2000, ZWSID1)
-    data_info = data_info.merge(data_info_temp, left_on='zpid', right_on='zpid')
-    data_info_temp = get_rows_from_zestimate_zpi(data_info, 2000, 3000, ZWSID2)
-    data_info = data_info.merge(data_info_temp, left_on='zpid', right_on='zpid')
-    data_info_temp = get_rows_from_zestimate_zpi(data_info, 3000, 4000, ZWSID3)
-    data_info = data_info.merge(data_info_temp, left_on='zpid', right_on='zpid')
-    data_info_temp = get_rows_from_zestimate_zpi(data_info, 4000, 5000, ZWSID4)
-    data_info = data_info.merge(data_info_temp, left_on='zpid', right_on='zpid')
+    data_info_temp = get_rows_from_zestimate_zpi(data_info, 10, 20, ZWSID4)
+    data_info = data_info.append(data_info_temp)
+    # data_info_temp = get_rows_from_zestimate_zpi(data_info, 20, 30, ZWSID2)
+    # data_info = data_info.append(data_info_temp)
+    # data_info_temp = get_rows_from_zestimate_zpi(data_info, 30, 40, ZWSID3)
+    # data_info = data_info.append(data_info_temp)
+    # data_info_temp = get_rows_from_zestimate_zpi(data_info, 40, 50, ZWSID4)
+    # data_info = data_info.append(data_info_temp)
 
     # Get Deep Data
-    data_deep_temp = get_rows_from_deepsearch_result_api(data_deep, 1000, 2000, ZWSID1)
-    data_deep = data_deep.merge(data_deep_temp, left_on='zpid', right_on='zpid')
-    data_deep_temp = get_rows_from_deepsearch_result_api(data_deep, 2000, 3000, ZWSID2)
-    data_deep = data_deep.merge(data_deep_temp, left_on='zpid', right_on='zpid')
-    data_deep_temp = get_rows_from_deepsearch_result_api(data_deep, 3000, 4000, ZWSID3)
-    data_deep = data_deep.merge(data_deep_temp, left_on='zpid', right_on='zpid')
-    data_deep_temp = get_rows_from_deepsearch_result_api(data_deep, 4000, 5000, ZWSID4)
-    data_deep = data_deep.merge(data_deep_temp, left_on='zpid', right_on='zpid')
+    data_deep_temp = get_rows_from_deepsearch_result_api(data_deep, data_info, 10, 20, ZWSID4)
+    data_deep = data_deep.append(data_deep_temp)
+    # data_deep_temp = get_rows_from_deepsearch_result_api(data_deep, data_info, 20, 30, ZWSID2)
+    # data_deep = data_deep.append(data_deep_temp)
+    # data_deep_temp = get_rows_from_deepsearch_result_api(data_deep, data_info, 30, 40, ZWSID3)
+    # data_deep = data_deep.append(data_deep_temp)
+    # data_deep_temp = get_rows_from_deepsearch_result_api(data_deep, data_info, 40, 50, ZWSID4)
+    # data_deep = data_deep.append(data_deep_temp)
 
     # Get update Date
-    data_update_temp = get_rows_from_updated_property_details_api(data_update, 1000, 2000, ZWSID1)
-    data_update = data_update.merge(data_update_temp, left_on='zpid', right_on='zpid')
-    data_update_temp = get_rows_from_updated_property_details_api(data_update, 2000, 3000, ZWSID2)
-    data_update = data_update.merge(data_update_temp, left_on='zpid', right_on='zpid')
-    data_update_temp = get_rows_from_updated_property_details_api(data_update, 3000, 4000, ZWSID3)
-    data_update = data_update.merge(data_update_temp, left_on='zpid', right_on='zpid')
-    data_update_temp = get_rows_from_updated_property_details_api(data_update, 4000, 5000, ZWSID4)
-    data_update = data_update.merge(data_update_temp, left_on='zpid', right_on='zpid')
+    data_update_temp = get_rows_from_updated_property_details_api(data_update, 10, 20, ZWSID4)
+    data_update = data_update.append(data_update_temp)
+    # data_update_temp = get_rows_from_updated_property_details_api(data_update, 20, 30, ZWSID2)
+    # data_update = data_update.append(data_update_temp)
+    # data_update_temp = get_rows_from_updated_property_details_api(data_update, 30, 40, ZWSID3)
+    # data_update = data_update.append(data_update_temp)
+    # data_update_temp = get_rows_from_updated_property_details_api(data_update, 40, 50, ZWSID4)
+    # data_update = data_update.append(data_update_temp)
 
     # Output File
     data_info.to_csv('../../input/' + house_info_filename, index=False)
