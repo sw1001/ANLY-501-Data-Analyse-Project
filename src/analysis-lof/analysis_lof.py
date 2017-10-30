@@ -7,17 +7,9 @@ from sklearn.neighbors import LocalOutlierFactor
 # Global variables
 SCRIPT_DIR = ""
 
-def main():
-	# Just set width of output when printing dataframe (Fit my screen)
-	pd.set_option('display.width', 170)
-
-	# Where this script is
-	global SCRIPT_DIR
-	SCRIPT_DIR = os.path.abspath(os.path.dirname(sys.argv[0]))
-
+def LOF(data_file_path):
 	# Make csv data to dataframe
-	data_dir = SCRIPT_DIR + "/../../input/clean/crime_counts_CLEANED.csv"
-	df = pd.read_csv(data_dir)
+	df = pd.read_csv(data_file_path)
 
 	# Print sample data in dataframe
 	print("========== Sample data ==========")
@@ -71,6 +63,21 @@ def main():
 		print("Number of non-outliers:", (len(y_pred)-outlier_number))
 		print("Oulier result:", y_pred)
 		print()
+
+
+def main():
+	# Just set width of output when printing dataframe (Fit my screen)
+	pd.set_option('display.width', 170)
+
+	# Where this script is
+	global SCRIPT_DIR
+	SCRIPT_DIR = os.path.abspath(os.path.dirname(sys.argv[0]))
+
+	# Set data file
+	data_file_path = SCRIPT_DIR + "/../../input/clean/crime_counts_CLEANED.csv"
+	LOF(data_file_path)
+
+	
 
 
 if __name__ == "__main__":
