@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import sys
-from Evaluator import Evaluator
+from eval import Evaluator
 
 '''
 Author: Shaobo Wang
