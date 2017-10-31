@@ -84,11 +84,23 @@ def LOF(
 
 	# ===== Local Outlier Factors ===== #
 	# 
-	# Try different k
+	# Set a file for outlier summary
+	SCRIPT_DIR = os.path.abspath(os.path.dirname(sys.argv[0]))
+	data_file_name = data_file_path.split('/')[len(data_file_path.split('/'))-1]
+	summary_file_name = SCRIPT_DIR + '/' + data_file_name + '_outlier_summary.csv'
+	f = open(summary_file_name, 'w')
+
+	# Print header
+	header = "k-neighbors,total, outliers, non-outliers, % outliers"
+	f.write(header+'\n')
+
+	# Try LOF with different k (default = 5, 20, 50)
+	result_list = {}
 	for k in k_list:
 		# Fit the model
 		clf = LocalOutlierFactor(n_neighbors=k)
 		y_pred = clf.fit_predict(train_data)
+		result_list["k="+str(k)] = y_pred
 
 		# Count number of outliers
 		outlier_number = 0
@@ -105,6 +117,15 @@ def LOF(
 		print("Oulier result:", y_pred)
 		print()
 
+		# Write summary to file
+		line = ",".join([str(k), str(len(y_pred)), str(outlier_number), str(len(y_pred)-outlier_number), "{0:.2f}%".format(outlier_number/(len(y_pred)-outlier_number)*100)])
+		f.write(line+'\n')
+	f.close()
+
+	# Set another file for outlier results
+	result_file_name = SCRIPT_DIR + '/' + data_file_name + '_outlier_results.csv'
+	pd.DataFrame(result_list).to_csv(result_file_name, index=False)
+
 
 def main():
 	"""
@@ -120,11 +141,11 @@ def main():
 
 	# Select data file to apply LOF or loop for do many files
 	data_file_paths = [None]*6
-	# data_file_paths[0] = SCRIPT_DIR + "/../../input/clean/Zillow_Cleaned.csv"				# 11.11
-	# data_file_paths[1] = SCRIPT_DIR + "/../../input/clean/crime_counts_CLEANED.csv"		# 11.16%
-	# data_file_paths[2] = SCRIPT_DIR + "/../../input/clean/crime_rates_CLEANED.csv"		# 11.11%
-	# data_file_paths[3] = SCRIPT_DIR + "/../../input/clean/earning_info_CLEANED.csv"		# 11.14%
-	# data_file_paths[4] = SCRIPT_DIR + "/../../input/clean/gdp_info_CLEANED.csv"			# 11.11%
+	data_file_paths[0] = SCRIPT_DIR + "/../../input/clean/Zillow_Cleaned.csv"			# 11.11
+	data_file_paths[1] = SCRIPT_DIR + "/../../input/clean/crime_counts_CLEANED.csv"		# 11.16%
+	data_file_paths[2] = SCRIPT_DIR + "/../../input/clean/crime_rates_CLEANED.csv"		# 11.11%
+	data_file_paths[3] = SCRIPT_DIR + "/../../input/clean/earning_info_CLEANED.csv"		# 11.14%
+	data_file_paths[4] = SCRIPT_DIR + "/../../input/clean/gdp_info_CLEANED.csv"			# 11.11%
 	data_file_paths[5] = SCRIPT_DIR + "/../../input/clean/graduation_rates_CLEANED.csv"	# 11.42%
 	
 	# Local Outlier Factor
