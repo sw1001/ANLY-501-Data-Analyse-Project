@@ -9,11 +9,11 @@ def LOF(
 		data_file_path,
 		k_list=[5, 20, 50]):
 	"""
-    Use Local Outlier Facter algorithm to find outliers on the specific file
-    :param data_file_path: The specific file path for input data
-    :param k_list: (Optional) The list of neighbor numbers for LOF algorithm, default is k=5,20,50
-    :return: None
-    """
+	Use Local Outlier Facter algorithm to find outliers on the specific file
+	:param data_file_path: The specific file path for input data
+	:param k_list: (Optional) The list of neighbor numbers for LOF algorithm, default is k=5,20,50
+	:return: None
+	"""
 
 	# Make csv data to dataframe
 	df = pd.read_csv(data_file_path, encoding='latin-1')
