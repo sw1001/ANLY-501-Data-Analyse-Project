@@ -36,7 +36,8 @@ def association_rules(
 		min_items=3,
 		sample_percentage=None,
 		sample_number=None,
-		print_rules=False):
+		print_rules=False,
+		write_to_file=False):
 	"""
 	Find association rules using Apriori algorithm
 	:param data_file_path: The specific file path for input dataset
@@ -45,6 +46,7 @@ def association_rules(
 	:param min_items: (Optional) Minimum number of items in association rules
 	:param sample_percentage: (Optional) Size of sample data in percenrage
 	:param print_rules: (Optional) print rules or not
+	:param write_to_file: (Optional) write rules and other detail to files
 	:return: None
 	"""
 
@@ -158,6 +160,9 @@ def association_rules(
 			    	rule_number += 1
 			print("Rules Number: "+str(rule_number)+'\n')
 
+	if write_to_file:
+		print("Writing file:")
+
 
 def main():
 	"""
@@ -190,7 +195,7 @@ def main():
 			
 			# To avoid making my computer crash, we will use only small sample set
 			# Set sample data to 300 samples
-			association_rules(data_file_paths[i], sample_percentage=None, sample_number=300)
+			association_rules(data_file_paths[i], sample_percentage=None, sample_number=300, write_to_file=True)
 
 
 if __name__ == "__main__":
