@@ -34,8 +34,8 @@ def association_rules(
 		min_sups=[0.2, 0.5, 0.8],
 		min_confs=[0.3],
 		min_items=3,
-		sample_percentage=0.25,
-		sample_number=300,
+		sample_percentage=None,
+		sample_number=None,
 		print_rules=False):
 	"""
 	Find association rules using Apriori algorithm
@@ -113,11 +113,16 @@ def association_rules(
 				train_df[train_df.columns[idx]] = train_df[train_df.columns[idx]].apply(lambda x: str(x)+"_categorized")
 
 	
-	# Get sample data (sample_percentage % of dataset or euqal to sample_number as maximum)
-	if len(train_df.index)*0.25 < sample_number:	
+	# Get sample data (default is 300 sample data)
+	if sample_percentage != None and sample_number == None:
 		train_df = train_df.sample(frac=sample_percentage, replace=False)
-	else:
+	elif sample_number != None and sample_percentage == None:
 		train_df = train_df.sample(n=sample_number, replace=False)
+	elif sample_number != None and sample_percentage != None:
+		sample_number = min(sample_number, int(sample_percentage*len(train_df.index)))
+		sample_number = min(sample_number, len(train_df.index))		# Not over the data size
+		train_df = train_df.sample(n=sample_number, replace=False)
+
 
 	print("========== Sample train data ==========")
 	print(train_df.iloc[:10])
@@ -174,7 +179,7 @@ def main():
 	# data_file_paths[2] = SCRIPT_DIR + "/../../input/clean/crime_rates_CLEANED.csv"
 	# data_file_paths[3] = SCRIPT_DIR + "/../../input/clean/earning_info_CLEANED.csv"
 	# data_file_paths[4] = SCRIPT_DIR + "/../../input/clean/gdp_info_CLEANED.csv"
-	# data_file_paths[5] = SCRIPT_DIR + "/../../input/clean/graduation_rates_CLEANED.csv"
+	data_file_paths[5] = SCRIPT_DIR + "/../../input/clean/graduation_rates_CLEANED.csv"
 	
 	# Local Outlier Factor
 	for i in range(len(data_file_paths)):
@@ -184,8 +189,8 @@ def main():
 			print("===============================================\n")
 			
 			# To avoid making my computer crash, we will use only small sample set
-			association_rules(data_file_paths[i])
-			print()
+			# Set sample data to 300 samples
+			association_rules(data_file_paths[i], sample_percentage=None, sample_number=300)
 
 
 if __name__ == "__main__":
