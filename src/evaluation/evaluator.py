@@ -60,7 +60,7 @@ class Evaluator:
             elif self.data_frame.dtypes[i] == 'float64':
                 print(column)
                 plt.figure()
-                # list stores all un null values
+                # list stores all not null values
                 data = self.data_frame[column]
                 data_list = list(data[pd.notnull(data)])
                 print(len(data_list))
@@ -74,7 +74,7 @@ class Evaluator:
                 print('Num of outliers: ' + str(len(outliers)))
                 plt.title(column)
                 # uncomment the following line to see the box plots
-                # plt.show()
+                plt.show()
                 fractions.append(len(outliers) / self.data_frame.shape[0])
             else:
                 print(column)
