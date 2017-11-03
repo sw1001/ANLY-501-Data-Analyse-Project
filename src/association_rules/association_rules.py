@@ -32,7 +32,7 @@ def binning(dataset, column_name):
 def association_rules(
 		data_file_path,
 		min_sups=[0.2, 0.5, 0.8],
-		min_confs=[0.5],
+		min_confs=[0.2, 0.5, 0.8],
 		min_items=3,
 		sample_percentage=None,
 		sample_number=None,
@@ -209,7 +209,7 @@ def main():
 			
 			# To avoid making my computer crash, we will use only small sample set
 			# Set sample data to 300 samples
-			association_rules(data_file_paths[i], sample_percentage=None, sample_number=300, print_rules=True)
+			association_rules(data_file_paths[i], sample_percentage=None, sample_number=3000, print_rules=True)
 
 
 if __name__ == "__main__":
