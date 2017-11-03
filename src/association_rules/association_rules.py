@@ -115,8 +115,10 @@ def association_rules(
 	
 	# Get sample data (default is 300 sample data)
 	if sample_percentage != None and sample_number == None:
+		sample_percentage = min(sample_percentage, 1.0)		# Not over the data size
 		train_df = train_df.sample(frac=sample_percentage, replace=False)
 	elif sample_number != None and sample_percentage == None:
+		sample_number = min(sample_number, len(train_df.index))		# Not over the data size
 		train_df = train_df.sample(n=sample_number, replace=False)
 	elif sample_number != None and sample_percentage != None:
 		sample_number = min(sample_number, int(sample_percentage*len(train_df.index)))
