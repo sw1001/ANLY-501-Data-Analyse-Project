@@ -148,14 +148,16 @@ def association_rules(
 	transactions = train_df.values.tolist()
 	for min_sup in min_sups:
 		for min_conf in min_confs:
-			print("========== min_sup: %.2f & min_conf: %.2f ==========" % (min_sup, min_conf))
-			f.write("========== min_sup: %.2f & min_conf: %.2f ==========\n" % (min_sup, min_conf))
+			print("========== Compute: min_sup: %.2f & min_conf: %.2f ==========" % (min_sup, min_conf))
+			f.write("========== Compute: min_sup: %.2f & min_conf: %.2f ==========\n" % (min_sup, min_conf))
 
 			# Apriori algorithm
 			result = list(apriori(transactions, min_support=min_sup, min_confidence=min_conf))
 
 			# Results
 			rule_set_number = 0
+			max_support = -1
+			most_frequent_itemset = None
 			for r in result:
 			    if len(r.items) >= min_items:
 			    	if print_rules:
@@ -166,14 +168,24 @@ def association_rules(
 				    	print(">>> Support:", str(r.support), '\n')
 				    	f.write(" ".join([">>> Support:", str(r.support), '\n\n']))
 
+				    	# Update most frequent itemset
+				    	if max_support < r.support:
+				    		max_support = r.support
+				    		most_frequent_itemset = set(r.items)
+
+				    	# Print association rules
 				    	for idx, rule in enumerate(r.ordered_statistics):
 				    		print(">>> Rule", str(idx+1), ":", str(set(rule.items_base)), "--->", str(set(rule.items_add)))
 				    		f.write(" ".join([">>> Rule", str(idx+1), ":", str(set(rule.items_base)), "--->", str(set(rule.items_add)), '\n']))
 				    		print("Confidence: " + str(rule.confidence) + '\n')
 				    		f.write("Confidence: " + str(rule.confidence) + '\n\n')
 			    	rule_set_number += 1
+			print("========== Summary: min_sup: %.2f & min_conf: %.2f ==========" % (min_sup, min_conf))
+			f.write("========== Summary:  min_sup: %.2f & min_conf: %.2f ==========\n" % (min_sup, min_conf))
 			print("Rule Set Number: "+str(rule_set_number)+'\n')
-			f.write("Rule Set Number: "+str(rule_set_number)+'\n\n')
+			f.write("Rule Set Number: "+str(rule_set_number)+'\n')
+			print("Most frequent itemset: " + str(most_frequent_itemset) + ' with support ' + str(max_support))
+			f.write("Most frequent itemset: " + str(most_frequent_itemset) + ' with support ' + str(max_support) + '\n\n')
 
 	f.close()
 
