@@ -32,12 +32,11 @@ def binning(dataset, column_name):
 def association_rules(
 		data_file_path,
 		min_sups=[0.2, 0.5, 0.8],
-		min_confs=[0.3],
+		min_confs=[0.5],
 		min_items=3,
 		sample_percentage=None,
 		sample_number=None,
-		print_rules=False,
-		write_to_file=False):
+		print_rules=False):
 	"""
 	Find association rules using Apriori algorithm
 	:param data_file_path: The specific file path for input dataset
@@ -46,7 +45,6 @@ def association_rules(
 	:param min_items: (Optional) Minimum number of items in association rules
 	:param sample_percentage: (Optional) Size of sample data in percenrage
 	:param print_rules: (Optional) print rules or not
-	:param write_to_file: (Optional) write rules and other detail to files
 	:return: None
 	"""
 
@@ -80,9 +78,9 @@ def association_rules(
 
 	# Convert some columns to be categorical such as cityid, countryid, zipcpde
 	if 'cityid' in list(train_df):
-		train_df['cityid'] = train_df['cityid'].apply(lambda x: str(x)+"_categorized")
+		train_df['cityid'] = train_df['cityid'].apply(lambda x: "cityid"+str(x)+"_categorized")
 	if 'zipcpde' in list(train_df):
-		train_df['zipcpde'] = train_df['zipcpde'].apply(lambda x: str(x)+"_categorized")
+		train_df['zipcpde'] = train_df['zipcpde'].apply(lambda x: "zipcpde"+str(x)+"_categorized")
 
 	# - Other files
 	# 
@@ -112,7 +110,7 @@ def association_rules(
 				train_df[train_df.columns[idx]] = binning(train_df[train_df.columns[idx]], train_df.columns[idx])
 			else:
 				# Just convert numeric to categorical
-				train_df[train_df.columns[idx]] = train_df[train_df.columns[idx]].apply(lambda x: str(x)+"_categorized")
+				train_df[train_df.columns[idx]] = train_df[train_df.columns[idx]].apply(lambda x: str(train_df.columns[idx])+"_"+str(x))
 
 	
 	# Get sample data (default is 300 sample data)
@@ -130,10 +128,18 @@ def association_rules(
 	print(train_df.iloc[:10])
 	print()
 
+	# Log file
+	SCRIPT_DIR = os.path.abspath(os.path.dirname(sys.argv[0]))	# Where this script is
+	data_file_name = data_file_path.split("/")[len(data_file_path.split("/"))-1]
+	f = open(SCRIPT_DIR+'/'+data_file_name+'_association_rules_log.txt', 'w')
+
 	# Data information
 	print("========== Data Information ==========")
+	f.write("========== Data Information ==========\n")
 	print("Original data: %i rows" % len(df.index))
+	f.write("Original data: %i rows\n" % len(df.index))
 	print("Sample data: %i rows" % len(train_df.index))
+	f.write("Sample data: %i rows\n\n" % len(train_df.index))
 	print()
 	
 	# Apriori using different minimum supports and minimum confidences
@@ -141,27 +147,33 @@ def association_rules(
 	for min_sup in min_sups:
 		for min_conf in min_confs:
 			print("========== min_sup: %.2f & min_conf: %.2f ==========" % (min_sup, min_conf))
+			f.write("========== min_sup: %.2f & min_conf: %.2f ==========\n" % (min_sup, min_conf))
 
 			# Apriori algorithm
 			result = list(apriori(transactions, min_support=min_sup, min_confidence=min_conf))
 
 			# Results
-			rule_number = 0
+			rule_set_number = 0
 			for r in result:
 			    if len(r.items) >= min_items:
 			    	if print_rules:
 				    	print("==========")
-				    	print(">>> Itemset:", set(r.items))
+				    	f.write("==========\n")
+				    	print(">>> Itemset:", str(set(r.items)))
+				    	f.write(" ".join([">>> Itemset:", str(set(r.items)), '\n']))
 				    	print(">>> Support:", str(r.support), '\n')
+				    	f.write(" ".join([">>> Support:", str(r.support), '\n\n']))
 
 				    	for idx, rule in enumerate(r.ordered_statistics):
-				    		print(">>> Rule", str(idx+1), ":", set(rule.items_base), "--->", set(rule.items_add))
+				    		print(">>> Rule", str(idx+1), ":", str(set(rule.items_base)), "--->", str(set(rule.items_add)))
+				    		f.write(" ".join([">>> Rule", str(idx+1), ":", str(set(rule.items_base)), "--->", str(set(rule.items_add)), '\n']))
 				    		print("Confidence: " + str(rule.confidence) + '\n')
-			    	rule_number += 1
-			print("Rules Number: "+str(rule_number)+'\n')
+				    		f.write("Confidence: " + str(rule.confidence) + '\n\n')
+			    	rule_set_number += 1
+			print("Rule Set Number: "+str(rule_set_number)+'\n')
+			f.write("Rule Set Number: "+str(rule_set_number)+'\n\n')
 
-	if write_to_file:
-		print("Writing file:")
+	f.close()
 
 
 def main():
@@ -179,11 +191,11 @@ def main():
 	# Select data file to apply LOF or loop for do many files
 	# Uncomment to activate file paths
 	data_file_paths = [None]*6
-	# data_file_paths[0] = SCRIPT_DIR + "/../../input/clean/Zillow_Cleaned.csv"
-	# data_file_paths[1] = SCRIPT_DIR + "/../../input/clean/crime_counts_CLEANED.csv"
-	# data_file_paths[2] = SCRIPT_DIR + "/../../input/clean/crime_rates_CLEANED.csv"
-	# data_file_paths[3] = SCRIPT_DIR + "/../../input/clean/earning_info_CLEANED.csv"
-	# data_file_paths[4] = SCRIPT_DIR + "/../../input/clean/gdp_info_CLEANED.csv"
+	data_file_paths[0] = SCRIPT_DIR + "/../../input/clean/Zillow_Cleaned.csv"
+	data_file_paths[1] = SCRIPT_DIR + "/../../input/clean/crime_counts_CLEANED.csv"
+	data_file_paths[2] = SCRIPT_DIR + "/../../input/clean/crime_rates_CLEANED.csv"
+	data_file_paths[3] = SCRIPT_DIR + "/../../input/clean/earning_info_CLEANED.csv"
+	data_file_paths[4] = SCRIPT_DIR + "/../../input/clean/gdp_info_CLEANED.csv"
 	data_file_paths[5] = SCRIPT_DIR + "/../../input/clean/graduation_rates_CLEANED.csv"
 	
 	# Local Outlier Factor
@@ -195,7 +207,7 @@ def main():
 			
 			# To avoid making my computer crash, we will use only small sample set
 			# Set sample data to 300 samples
-			association_rules(data_file_paths[i], sample_percentage=None, sample_number=300, write_to_file=True)
+			association_rules(data_file_paths[i], sample_percentage=None, sample_number=300, print_rules=True)
 
 
 if __name__ == "__main__":

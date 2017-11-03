@@ -1,0 +1,1563 @@
+========== Data Information ==========
+Original data: 2823 rows
+Sample data: 300 rows
+
+========== min_sup: 0.20 & min_conf: 0.50 ==========
+==========
+>>> Itemset: {'median_earnings_High', 'female_full_time_median_earnings_High', 'female_median_earnings_High'} 
+>>> Support: 0.22 
+
+>>> Rule 1 : {'female_full_time_median_earnings_High', 'female_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.8918918918918919
+
+>>> Rule 2 : {'median_earnings_High', 'female_full_time_median_earnings_High'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9565217391304347
+
+>>> Rule 3 : {'median_earnings_High', 'female_median_earnings_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.88
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'female_median_earnings_High'} 
+>>> Support: 0.22333333333333333 
+
+>>> Rule 1 : {'female_full_time_median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9054054054054054
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} ---> {'female_median_earnings_High'} 
+Confidence: 0.8271604938271604
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.788235294117647
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} 
+>>> Support: 0.22 
+
+>>> Rule 1 : {'female_full_time_median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.8918918918918919
+
+>>> Rule 2 : {'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.88
+
+>>> Rule 3 : {'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.8918918918918919
+
+==========
+>>> Itemset: {'percent_with_earnings_75000_to_99999_High', 'female_full_time_median_earnings_High', 'female_median_earnings_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'female_full_time_median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_75000_to_99999_High'} 
+Confidence: 0.8108108108108109
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_High', 'female_full_time_median_earnings_High'} ---> {'female_median_earnings_High'} 
+Confidence: 0.821917808219178
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_High', 'female_median_earnings_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.8
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'male_full_time_median_earnings_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'female_full_time_median_earnings_High', 'male_full_time_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.967741935483871
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} ---> {'male_full_time_median_earnings_High'} 
+Confidence: 0.7407407407407407
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'male_full_time_median_earnings_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.9230769230769231
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_High', 'percent_with_earnings_over_100000_High', 'male_full_time_median_earnings_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'female_full_time_median_earnings_High', 'male_full_time_median_earnings_High'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.967741935483871
+
+>>> Rule 2 : {'female_full_time_median_earnings_High', 'percent_with_earnings_over_100000_High'} ---> {'male_full_time_median_earnings_High'} 
+Confidence: 0.8695652173913043
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_High', 'male_full_time_median_earnings_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.9090909090909092
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} 
+>>> Support: 0.22 
+
+>>> Rule 1 : {'median_earnings_High', 'female_full_time_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9565217391304347
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.8148148148148148
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.8684210526315789
+
+==========
+>>> Itemset: {'median_earnings_High', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.21666666666666667 
+
+>>> Rule 1 : {'median_earnings_High', 'female_full_time_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9420289855072463
+
+>>> Rule 2 : {'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'median_earnings_High'} 
+Confidence: 0.8666666666666667
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.8904109589041096
+
+==========
+>>> Itemset: {'median_earnings_High', 'female_full_time_median_earnings_High', 'percent_with_earnings_over_100000_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'median_earnings_High', 'female_full_time_median_earnings_High'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.8695652173913043
+
+>>> Rule 2 : {'female_full_time_median_earnings_High', 'percent_with_earnings_over_100000_High'} ---> {'median_earnings_High'} 
+Confidence: 0.8695652173913043
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_over_100000_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.9230769230769231
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'median_earnings_bachelor_degree_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'female_full_time_median_earnings_High', 'median_earnings_bachelor_degree_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9375
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} ---> {'median_earnings_bachelor_degree_High'} 
+Confidence: 0.7407407407407407
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'median_earnings_bachelor_degree_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.8695652173913043
+
+==========
+>>> Itemset: {'median_earnings_some_college_or_associates_High', 'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'median_earnings_some_college_or_associates_High', 'female_full_time_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9375
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} ---> {'median_earnings_some_college_or_associates_High'} 
+Confidence: 0.7407407407407407
+
+>>> Rule 3 : {'median_earnings_some_college_or_associates_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.821917808219178
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_10000_to_14999_Low'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'female_full_time_median_earnings_High', 'percent_with_earnings_10000_to_14999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9264705882352942
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} ---> {'percent_with_earnings_10000_to_14999_Low'} 
+Confidence: 0.7777777777777777
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_10000_to_14999_Low'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.7875
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'percent_with_earnings_10000_to_14999_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'female_full_time_median_earnings_High', 'percent_with_earnings_10000_to_14999_Low'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.8970588235294118
+
+>>> Rule 2 : {'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_10000_to_14999_Low'} 
+Confidence: 0.8133333333333334
+
+>>> Rule 3 : {'percent_with_earnings_25000_to_34999_Low', 'percent_with_earnings_10000_to_14999_Low'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.782051282051282
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.24 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.8888888888888888
+
+>>> Rule 2 : {'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.96
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.857142857142857
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_75000_to_99999_High'} 
+>>> Support: 0.22 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} ---> {'percent_with_earnings_75000_to_99999_High'} 
+Confidence: 0.8148148148148148
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_High', 'female_full_time_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9041095890410958
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_75000_to_99999_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.8148148148148148
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_over_100000_High'} 
+>>> Support: 0.22 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.8148148148148148
+
+>>> Rule 2 : {'female_full_time_median_earnings_High', 'percent_with_earnings_over_100000_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9565217391304347
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_over_100000_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.9166666666666667
+
+==========
+>>> Itemset: {'percent_with_earnings_75000_to_99999_High', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_75000_to_99999_High'} 
+Confidence: 0.8266666666666667
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_High', 'female_full_time_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.8493150684931506
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.8157894736842104
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_High', 'percent_with_earnings_over_100000_High', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.21333333333333335 
+
+>>> Rule 1 : {'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.8533333333333334
+
+>>> Rule 2 : {'female_full_time_median_earnings_High', 'percent_with_earnings_over_100000_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.927536231884058
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.927536231884058
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'male_full_time_median_earnings_Low', 'female_median_earnings_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'female_median_earnings_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.7176470588235294
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'male_full_time_median_earnings_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.782051282051282
+
+>>> Rule 3 : {'male_full_time_median_earnings_Low', 'female_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9104477611940299
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'median_earnings_Low', 'female_median_earnings_Low'} 
+>>> Support: 0.24 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'female_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.8470588235294118
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'median_earnings_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.8780487804878049
+
+>>> Rule 3 : {'median_earnings_Low', 'female_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.8888888888888888
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'female_median_earnings_Low', 'median_earnings_some_college_or_associates_Low'} 
+>>> Support: 0.21333333333333335 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'female_median_earnings_Low'} ---> {'median_earnings_some_college_or_associates_Low'} 
+Confidence: 0.7529411764705883
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'median_earnings_some_college_or_associates_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.8648648648648649
+
+>>> Rule 3 : {'female_median_earnings_Low', 'median_earnings_some_college_or_associates_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.888888888888889
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'female_median_earnings_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'female_median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.7176470588235294
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.7922077922077922
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_High', 'female_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9104477611940299
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'female_median_earnings_Low'} 
+>>> Support: 0.23666666666666666 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'female_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.8352941176470589
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.7888888888888889
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_Low', 'female_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9342105263157894
+
+==========
+>>> Itemset: {'percent_with_earnings_over_100000_Low', 'female_full_time_median_earnings_Low', 'female_median_earnings_Low'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'female_median_earnings_Low'} ---> {'percent_with_earnings_over_100000_Low'} 
+Confidence: 0.7411764705882353
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_Low', 'female_full_time_median_earnings_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.7241379310344828
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_Low', 'female_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9130434782608695
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'male_full_time_median_earnings_Low', 'male_median_earnings_Low'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'male_full_time_median_earnings_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.7948717948717948
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'male_median_earnings_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.8611111111111112
+
+>>> Rule 3 : {'male_full_time_median_earnings_Low', 'male_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.8266666666666667
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'male_full_time_median_earnings_Low', 'median_earnings_Low'} 
+>>> Support: 0.21333333333333335 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'male_full_time_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.8205128205128205
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'median_earnings_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.7804878048780489
+
+>>> Rule 3 : {'male_full_time_median_earnings_Low', 'median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9014084507042254
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'male_full_time_median_earnings_Low'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'male_full_time_median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.7948717948717948
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.8051948051948052
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_High', 'male_full_time_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.8857142857142857
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'male_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} 
+>>> Support: 0.22666666666666666 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'male_full_time_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.8717948717948717
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.7555555555555555
+
+>>> Rule 3 : {'male_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.894736842105263
+
+==========
+>>> Itemset: {'percent_with_earnings_over_100000_Low', 'female_full_time_median_earnings_Low', 'male_full_time_median_earnings_Low'} 
+>>> Support: 0.22 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'male_full_time_median_earnings_Low'} ---> {'percent_with_earnings_over_100000_Low'} 
+Confidence: 0.8461538461538461
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_Low', 'female_full_time_median_earnings_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.7586206896551725
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_Low', 'male_full_time_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.8048780487804879
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'median_earnings_Low', 'male_median_earnings_Low'} 
+>>> Support: 0.22 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'male_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.9166666666666667
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'median_earnings_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.8048780487804879
+
+>>> Rule 3 : {'median_earnings_Low', 'male_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.8571428571428572
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'male_median_earnings_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'male_median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.8472222222222223
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.7922077922077922
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_High', 'male_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.8970588235294118
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low'} 
+>>> Support: 0.22 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'male_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.9166666666666667
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.7333333333333334
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9166666666666667
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'median_earnings_Low', 'median_earnings_some_college_or_associates_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'median_earnings_Low'} ---> {'median_earnings_some_college_or_associates_Low'} 
+Confidence: 0.7439024390243903
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'median_earnings_some_college_or_associates_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.8243243243243243
+
+>>> Rule 3 : {'median_earnings_Low', 'median_earnings_some_college_or_associates_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.8840579710144927
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'median_earnings_Low'} 
+>>> Support: 0.22333333333333333 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.8170731707317074
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High'} ---> {'median_earnings_Low'} 
+Confidence: 0.8701298701298702
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_High', 'median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9054054054054054
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'median_earnings_Low'} 
+>>> Support: 0.23 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.8414634146341464
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.7666666666666667
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_Low', 'median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9324324324324325
+
+==========
+>>> Itemset: {'percent_with_earnings_over_100000_Low', 'female_full_time_median_earnings_Low', 'median_earnings_Low'} 
+>>> Support: 0.21666666666666667 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'median_earnings_Low'} ---> {'percent_with_earnings_over_100000_Low'} 
+Confidence: 0.7926829268292683
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_Low', 'female_full_time_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.7471264367816093
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_Low', 'median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9027777777777778
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'median_earnings_some_college_or_associates_Low'} 
+>>> Support: 0.21666666666666667 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'median_earnings_some_college_or_associates_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.8783783783783784
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'median_earnings_some_college_or_associates_Low'} 
+Confidence: 0.7222222222222223
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_Low', 'median_earnings_some_college_or_associates_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9558823529411765
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'percent_with_earnings_75000_to_99999_Low'} 
+>>> Support: 0.22333333333333333 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.8701298701298702
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.7444444444444445
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_High', 'percent_with_earnings_75000_to_99999_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9436619718309859
+
+==========
+>>> Itemset: {'percent_with_earnings_over_100000_Low', 'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High'} ---> {'percent_with_earnings_over_100000_Low'} 
+Confidence: 0.8181818181818182
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_Low', 'female_full_time_median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.7241379310344828
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_Low', 'percent_with_earnings_15000_to_24999_High'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.8999999999999999
+
+==========
+>>> Itemset: {'percent_with_earnings_over_100000_Low', 'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} 
+>>> Support: 0.23 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'percent_with_earnings_over_100000_Low'} 
+Confidence: 0.7666666666666667
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_Low', 'female_full_time_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.7931034482758622
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.8734177215189874
+
+==========
+>>> Itemset: {'male_median_earnings_High', 'female_median_earnings_High', 'median_earnings_High'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'male_median_earnings_High', 'female_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.9841269841269842
+
+>>> Rule 2 : {'median_earnings_High', 'female_median_earnings_High'} ---> {'male_median_earnings_High'} 
+Confidence: 0.8266666666666667
+
+>>> Rule 3 : {'male_median_earnings_High', 'median_earnings_High'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9393939393939393
+
+==========
+>>> Itemset: {'male_median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'male_median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9523809523809524
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} ---> {'male_median_earnings_High'} 
+Confidence: 0.7058823529411765
+
+>>> Rule 3 : {'male_median_earnings_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9090909090909092
+
+==========
+>>> Itemset: {'male_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'male_median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9523809523809524
+
+>>> Rule 2 : {'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'male_median_earnings_High'} 
+Confidence: 0.8108108108108109
+
+>>> Rule 3 : {'male_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.8695652173913043
+
+==========
+>>> Itemset: {'median_earnings_High', 'female_median_earnings_High', 'percent_with_earnings_10000_to_14999_Low'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_10000_to_14999_Low'} 
+Confidence: 0.8
+
+>>> Rule 2 : {'female_median_earnings_High', 'percent_with_earnings_10000_to_14999_Low'} ---> {'median_earnings_High'} 
+Confidence: 0.8571428571428572
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_10000_to_14999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9375
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} 
+>>> Support: 0.23666666666666666 
+
+>>> Rule 1 : {'median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9466666666666667
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.8352941176470589
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9342105263157894
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} 
+>>> Support: 0.22333333333333333 
+
+>>> Rule 1 : {'median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.8933333333333333
+
+>>> Rule 2 : {'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.9054054054054054
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9178082191780821
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_75000_to_99999_High', 'female_median_earnings_High'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_75000_to_99999_High'} 
+Confidence: 0.84
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_High', 'female_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.84
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_75000_to_99999_High'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9264705882352942
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_over_100000_High', 'female_median_earnings_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.8
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_High', 'female_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.9375
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_over_100000_High'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9230769230769231
+
+==========
+>>> Itemset: {'median_earnings_some_college_or_associates_High', 'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'median_earnings_some_college_or_associates_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.911764705882353
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} ---> {'median_earnings_some_college_or_associates_High'} 
+Confidence: 0.7294117647058823
+
+>>> Rule 3 : {'median_earnings_some_college_or_associates_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.8493150684931506
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High', 'percent_with_earnings_10000_to_14999_Low'} 
+>>> Support: 0.21333333333333335 
+
+>>> Rule 1 : {'female_median_earnings_High', 'percent_with_earnings_10000_to_14999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9142857142857144
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} ---> {'percent_with_earnings_10000_to_14999_Low'} 
+Confidence: 0.7529411764705883
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_10000_to_14999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.8
+
+==========
+>>> Itemset: {'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High', 'percent_with_earnings_10000_to_14999_Low'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'female_median_earnings_High', 'percent_with_earnings_10000_to_14999_Low'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.8857142857142857
+
+>>> Rule 2 : {'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'percent_with_earnings_10000_to_14999_Low'} 
+Confidence: 0.8378378378378378
+
+>>> Rule 3 : {'percent_with_earnings_25000_to_34999_Low', 'percent_with_earnings_10000_to_14999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.7948717948717948
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} 
+>>> Support: 0.23 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.8117647058823529
+
+>>> Rule 2 : {'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9324324324324325
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.8214285714285714
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_75000_to_99999_High', 'female_median_earnings_High'} 
+>>> Support: 0.22666666666666666 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} ---> {'percent_with_earnings_75000_to_99999_High'} 
+Confidence: 0.7999999999999999
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9066666666666666
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_75000_to_99999_High'} ---> {'female_median_earnings_High'} 
+Confidence: 0.8395061728395061
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_over_100000_High', 'female_median_earnings_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.7058823529411765
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9375
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_over_100000_High'} ---> {'female_median_earnings_High'} 
+Confidence: 0.8333333333333334
+
+==========
+>>> Itemset: {'percent_with_earnings_75000_to_99999_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'percent_with_earnings_75000_to_99999_High'} 
+Confidence: 0.8378378378378378
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.8266666666666667
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.8157894736842104
+
+==========
+>>> Itemset: {'median_earnings_Low', 'male_median_earnings_Low', 'female_median_earnings_Low'} 
+>>> Support: 0.21666666666666667 
+
+>>> Rule 1 : {'male_median_earnings_Low', 'female_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'median_earnings_Low', 'female_median_earnings_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.8024691358024691
+
+>>> Rule 3 : {'median_earnings_Low', 'male_median_earnings_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.8441558441558442
+
+==========
+>>> Itemset: {'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low', 'female_median_earnings_Low'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'male_median_earnings_Low', 'female_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.9230769230769231
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_Low', 'female_median_earnings_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.7894736842105263
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.8333333333333334
+
+==========
+>>> Itemset: {'median_earnings_Low', 'female_median_earnings_Low', 'median_earnings_some_college_or_associates_Low'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'median_earnings_Low', 'female_median_earnings_Low'} ---> {'median_earnings_some_college_or_associates_Low'} 
+Confidence: 0.7777777777777777
+
+>>> Rule 2 : {'female_median_earnings_Low', 'median_earnings_some_college_or_associates_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.875
+
+>>> Rule 3 : {'median_earnings_Low', 'median_earnings_some_college_or_associates_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.9130434782608695
+
+==========
+>>> Itemset: {'median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'female_median_earnings_Low'} 
+>>> Support: 0.22 
+
+>>> Rule 1 : {'median_earnings_Low', 'female_median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.8148148148148148
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_High', 'female_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.9850746268656717
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_High', 'median_earnings_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.8918918918918919
+
+==========
+>>> Itemset: {'median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'female_median_earnings_Low'} 
+>>> Support: 0.22333333333333333 
+
+>>> Rule 1 : {'median_earnings_Low', 'female_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.8271604938271604
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_Low', 'female_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.8815789473684209
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_Low', 'median_earnings_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.9054054054054054
+
+==========
+>>> Itemset: {'female_median_earnings_Mean', 'median_earnings_Mean', 'male_median_earnings_Mean'} 
+>>> Support: 0.22333333333333333 
+
+>>> Rule 1 : {'female_median_earnings_Mean', 'male_median_earnings_Mean'} ---> {'median_earnings_Mean'} 
+Confidence: 0.9305555555555556
+
+>>> Rule 2 : {'female_median_earnings_Mean', 'median_earnings_Mean'} ---> {'male_median_earnings_Mean'} 
+Confidence: 0.8072289156626505
+
+>>> Rule 3 : {'median_earnings_Mean', 'male_median_earnings_Mean'} ---> {'female_median_earnings_Mean'} 
+Confidence: 0.6767676767676767
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'male_full_time_median_earnings_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'median_earnings_High', 'male_full_time_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9523809523809524
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'male_full_time_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.9230769230769231
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'male_full_time_median_earnings_High'} 
+Confidence: 0.7894736842105263
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_over_100000_High', 'male_full_time_median_earnings_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'median_earnings_High', 'male_full_time_median_earnings_High'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.9523809523809524
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_High', 'male_full_time_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.9090909090909092
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_over_100000_High'} ---> {'male_full_time_median_earnings_High'} 
+Confidence: 0.9230769230769231
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low', 'male_full_time_median_earnings_High'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'male_full_time_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9230769230769231
+
+>>> Rule 2 : {'percent_with_earnings_25000_to_34999_Low', 'male_full_time_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9375
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} ---> {'male_full_time_median_earnings_High'} 
+Confidence: 0.7142857142857143
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_over_100000_High', 'male_full_time_median_earnings_High'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'male_full_time_median_earnings_High'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.9538461538461538
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_High', 'male_full_time_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9393939393939393
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_over_100000_High'} ---> {'male_full_time_median_earnings_High'} 
+Confidence: 0.8611111111111112
+
+==========
+>>> Itemset: {'percent_with_earnings_over_100000_High', 'percent_with_earnings_25000_to_34999_Low', 'male_full_time_median_earnings_High'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'percent_with_earnings_25000_to_34999_Low', 'male_full_time_median_earnings_High'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.953125
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_High', 'male_full_time_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9242424242424243
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'male_full_time_median_earnings_High'} 
+Confidence: 0.8840579710144927
+
+==========
+>>> Itemset: {'median_earnings_Low', 'male_full_time_median_earnings_Low', 'male_median_earnings_Low'} 
+>>> Support: 0.21666666666666667 
+
+>>> Rule 1 : {'male_full_time_median_earnings_Low', 'male_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.8666666666666667
+
+>>> Rule 2 : {'male_full_time_median_earnings_Low', 'median_earnings_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.9154929577464789
+
+>>> Rule 3 : {'median_earnings_Low', 'male_median_earnings_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.8441558441558442
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_High', 'male_full_time_median_earnings_Low', 'male_median_earnings_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'male_full_time_median_earnings_Low', 'male_median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.8133333333333334
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_High', 'male_full_time_median_earnings_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.8714285714285714
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_High', 'male_median_earnings_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.8970588235294118
+
+==========
+>>> Itemset: {'percent_with_earnings_75000_to_99999_Low', 'male_full_time_median_earnings_Low', 'male_median_earnings_Low'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'male_full_time_median_earnings_Low', 'male_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.84
+
+>>> Rule 2 : {'male_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.8289473684210525
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.875
+
+==========
+>>> Itemset: {'percent_with_earnings_over_100000_Low', 'male_full_time_median_earnings_Low', 'male_median_earnings_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'male_full_time_median_earnings_Low', 'male_median_earnings_Low'} ---> {'percent_with_earnings_over_100000_Low'} 
+Confidence: 0.8133333333333334
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_Low', 'male_full_time_median_earnings_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.7439024390243903
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_Low', 'male_median_earnings_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.8714285714285714
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_High', 'male_full_time_median_earnings_Low', 'median_earnings_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'male_full_time_median_earnings_Low', 'median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.8591549295774649
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_High', 'male_full_time_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.8714285714285714
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_High', 'median_earnings_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.8243243243243243
+
+==========
+>>> Itemset: {'percent_with_earnings_75000_to_99999_Low', 'male_full_time_median_earnings_Low', 'median_earnings_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'male_full_time_median_earnings_Low', 'median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.8591549295774649
+
+>>> Rule 2 : {'male_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.8026315789473684
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_Low', 'median_earnings_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.8243243243243243
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_High', 'male_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_High', 'male_full_time_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.8571428571428572
+
+>>> Rule 2 : {'male_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.7894736842105263
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_High', 'percent_with_earnings_75000_to_99999_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.8450704225352114
+
+==========
+>>> Itemset: {'percent_with_earnings_over_100000_Low', 'male_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'male_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'percent_with_earnings_over_100000_Low'} 
+Confidence: 0.8289473684210525
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_Low', 'male_full_time_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.7682926829268293
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_Low', 'percent_with_earnings_75000_to_99999_Low'} ---> {'male_full_time_median_earnings_Low'} 
+Confidence: 0.7974683544303798
+
+==========
+>>> Itemset: {'male_full_time_median_earnings_Mean', 'median_earnings_Mean', 'male_median_earnings_Mean'} 
+>>> Support: 0.24666666666666667 
+
+>>> Rule 1 : {'male_full_time_median_earnings_Mean', 'male_median_earnings_Mean'} ---> {'median_earnings_Mean'} 
+Confidence: 0.7551020408163266
+
+>>> Rule 2 : {'male_full_time_median_earnings_Mean', 'median_earnings_Mean'} ---> {'male_median_earnings_Mean'} 
+Confidence: 0.8705882352941177
+
+>>> Rule 3 : {'median_earnings_Mean', 'male_median_earnings_Mean'} ---> {'male_full_time_median_earnings_Mean'} 
+Confidence: 0.7474747474747475
+
+==========
+>>> Itemset: {'male_full_time_median_earnings_Mean', 'median_earnings_bachelor_degree_Mean', 'male_median_earnings_Mean'} 
+>>> Support: 0.21666666666666667 
+
+>>> Rule 1 : {'male_full_time_median_earnings_Mean', 'male_median_earnings_Mean'} ---> {'median_earnings_bachelor_degree_Mean'} 
+Confidence: 0.663265306122449
+
+>>> Rule 2 : {'male_full_time_median_earnings_Mean', 'median_earnings_bachelor_degree_Mean'} ---> {'male_median_earnings_Mean'} 
+Confidence: 0.8666666666666667
+
+>>> Rule 3 : {'median_earnings_bachelor_degree_Mean', 'male_median_earnings_Mean'} ---> {'male_full_time_median_earnings_Mean'} 
+Confidence: 0.8333333333333334
+
+==========
+>>> Itemset: {'male_full_time_median_earnings_Mean', 'median_earnings_graduate_or_professional_degree_Mean', 'male_median_earnings_Mean'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'male_full_time_median_earnings_Mean', 'male_median_earnings_Mean'} ---> {'median_earnings_graduate_or_professional_degree_Mean'} 
+Confidence: 0.6428571428571428
+
+>>> Rule 2 : {'male_full_time_median_earnings_Mean', 'median_earnings_graduate_or_professional_degree_Mean'} ---> {'male_median_earnings_Mean'} 
+Confidence: 0.8181818181818182
+
+>>> Rule 3 : {'median_earnings_graduate_or_professional_degree_Mean', 'male_median_earnings_Mean'} ---> {'male_full_time_median_earnings_Mean'} 
+Confidence: 0.8076923076923076
+
+==========
+>>> Itemset: {'male_full_time_median_earnings_Mean', 'median_earnings_high_school_Mean', 'male_median_earnings_Mean'} 
+>>> Support: 0.21666666666666667 
+
+>>> Rule 1 : {'male_full_time_median_earnings_Mean', 'male_median_earnings_Mean'} ---> {'median_earnings_high_school_Mean'} 
+Confidence: 0.663265306122449
+
+>>> Rule 2 : {'male_full_time_median_earnings_Mean', 'median_earnings_high_school_Mean'} ---> {'male_median_earnings_Mean'} 
+Confidence: 0.8125
+
+>>> Rule 3 : {'median_earnings_high_school_Mean', 'male_median_earnings_Mean'} ---> {'male_full_time_median_earnings_Mean'} 
+Confidence: 0.7647058823529412
+
+==========
+>>> Itemset: {'male_full_time_median_earnings_Mean', 'median_earnings_high_school_Mean', 'median_earnings_Mean'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'male_full_time_median_earnings_Mean', 'median_earnings_Mean'} ---> {'median_earnings_high_school_Mean'} 
+Confidence: 0.7058823529411765
+
+>>> Rule 2 : {'male_full_time_median_earnings_Mean', 'median_earnings_high_school_Mean'} ---> {'median_earnings_Mean'} 
+Confidence: 0.75
+
+>>> Rule 3 : {'median_earnings_high_school_Mean', 'median_earnings_Mean'} ---> {'male_full_time_median_earnings_Mean'} 
+Confidence: 0.7142857142857143
+
+==========
+>>> Itemset: {'male_median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'median_earnings_High'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'male_median_earnings_High', 'median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9393939393939393
+
+>>> Rule 2 : {'male_median_earnings_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'median_earnings_High'} 
+Confidence: 0.9393939393939393
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'male_median_earnings_High'} 
+Confidence: 0.8157894736842104
+
+==========
+>>> Itemset: {'male_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'median_earnings_High'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'male_median_earnings_High', 'median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9545454545454545
+
+>>> Rule 2 : {'male_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'median_earnings_High'} 
+Confidence: 0.9130434782608695
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'male_median_earnings_High'} 
+Confidence: 0.8630136986301369
+
+==========
+>>> Itemset: {'male_median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'male_median_earnings_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9545454545454545
+
+>>> Rule 2 : {'male_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9130434782608695
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} ---> {'male_median_earnings_High'} 
+Confidence: 0.7499999999999999
+
+==========
+>>> Itemset: {'median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'male_median_earnings_Low'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'median_earnings_Low', 'male_median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.8051948051948052
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_High', 'male_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.911764705882353
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_High', 'median_earnings_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.8378378378378378
+
+==========
+>>> Itemset: {'median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low'} 
+>>> Support: 0.21666666666666667 
+
+>>> Rule 1 : {'median_earnings_Low', 'male_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.8441558441558442
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.9027777777777778
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_Low', 'median_earnings_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.8783783783783784
+
+==========
+>>> Itemset: {'percent_with_earnings_over_100000_Low', 'median_earnings_Low', 'male_median_earnings_Low'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'median_earnings_Low', 'male_median_earnings_Low'} ---> {'percent_with_earnings_over_100000_Low'} 
+Confidence: 0.7792207792207793
+
+>>> Rule 2 : {'percent_with_earnings_over_100000_Low', 'male_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.8571428571428572
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_Low', 'median_earnings_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.8333333333333334
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_High', 'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_High', 'male_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.8970588235294118
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.8472222222222223
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_High', 'percent_with_earnings_75000_to_99999_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.8591549295774649
+
+==========
+>>> Itemset: {'median_earnings_bachelor_degree_Mean', 'median_earnings_Mean', 'male_median_earnings_Mean'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'median_earnings_Mean', 'male_median_earnings_Mean'} ---> {'median_earnings_bachelor_degree_Mean'} 
+Confidence: 0.6060606060606061
+
+>>> Rule 2 : {'median_earnings_bachelor_degree_Mean', 'male_median_earnings_Mean'} ---> {'median_earnings_Mean'} 
+Confidence: 0.7692307692307693
+
+>>> Rule 3 : {'median_earnings_Mean', 'median_earnings_bachelor_degree_Mean'} ---> {'male_median_earnings_Mean'} 
+Confidence: 0.8823529411764707
+
+==========
+>>> Itemset: {'median_earnings_graduate_or_professional_degree_Mean', 'median_earnings_Mean', 'male_median_earnings_Mean'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'median_earnings_Mean', 'male_median_earnings_Mean'} ---> {'median_earnings_graduate_or_professional_degree_Mean'} 
+Confidence: 0.6262626262626262
+
+>>> Rule 2 : {'median_earnings_graduate_or_professional_degree_Mean', 'male_median_earnings_Mean'} ---> {'median_earnings_Mean'} 
+Confidence: 0.7948717948717948
+
+>>> Rule 3 : {'median_earnings_graduate_or_professional_degree_Mean', 'median_earnings_Mean'} ---> {'male_median_earnings_Mean'} 
+Confidence: 0.8493150684931506
+
+==========
+>>> Itemset: {'median_earnings_high_school_Mean', 'median_earnings_Mean', 'male_median_earnings_Mean'} 
+>>> Support: 0.23333333333333334 
+
+>>> Rule 1 : {'median_earnings_Mean', 'male_median_earnings_Mean'} ---> {'median_earnings_high_school_Mean'} 
+Confidence: 0.7070707070707071
+
+>>> Rule 2 : {'median_earnings_high_school_Mean', 'male_median_earnings_Mean'} ---> {'median_earnings_Mean'} 
+Confidence: 0.823529411764706
+
+>>> Rule 3 : {'median_earnings_high_school_Mean', 'median_earnings_Mean'} ---> {'male_median_earnings_Mean'} 
+Confidence: 0.8333333333333333
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_10000_to_14999_Low'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'median_earnings_High', 'percent_with_earnings_10000_to_14999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9687499999999999
+
+>>> Rule 2 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'percent_with_earnings_10000_to_14999_Low'} 
+Confidence: 0.8157894736842104
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_10000_to_14999_Low'} ---> {'median_earnings_High'} 
+Confidence: 0.775
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'percent_with_earnings_10000_to_14999_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'median_earnings_High', 'percent_with_earnings_10000_to_14999_Low'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.953125
+
+>>> Rule 2 : {'median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_10000_to_14999_Low'} 
+Confidence: 0.8356164383561644
+
+>>> Rule 3 : {'percent_with_earnings_25000_to_34999_Low', 'percent_with_earnings_10000_to_14999_Low'} ---> {'median_earnings_High'} 
+Confidence: 0.782051282051282
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.22666666666666666 
+
+>>> Rule 1 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.894736842105263
+
+>>> Rule 2 : {'median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9315068493150684
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} ---> {'median_earnings_High'} 
+Confidence: 0.8095238095238094
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_75000_to_99999_High'} 
+>>> Support: 0.21666666666666667 
+
+>>> Rule 1 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'percent_with_earnings_75000_to_99999_High'} 
+Confidence: 0.8552631578947368
+
+>>> Rule 2 : {'median_earnings_High', 'percent_with_earnings_75000_to_99999_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9558823529411765
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_75000_to_99999_High'} ---> {'median_earnings_High'} 
+Confidence: 0.8024691358024691
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_over_100000_High'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.8026315789473684
+
+>>> Rule 2 : {'median_earnings_High', 'percent_with_earnings_over_100000_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9384615384615385
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_over_100000_High'} ---> {'median_earnings_High'} 
+Confidence: 0.8472222222222223
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_75000_to_99999_High', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_75000_to_99999_High'} 
+Confidence: 0.821917808219178
+
+>>> Rule 2 : {'median_earnings_High', 'percent_with_earnings_75000_to_99999_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.8823529411764707
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'median_earnings_High'} 
+Confidence: 0.7894736842105263
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_over_100000_High', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.8356164383561644
+
+>>> Rule 2 : {'median_earnings_High', 'percent_with_earnings_over_100000_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9384615384615385
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'median_earnings_High'} 
+Confidence: 0.8840579710144927
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_High', 'percent_with_earnings_75000_to_99999_Low', 'median_earnings_Low'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_High', 'median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.8378378378378378
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_Low', 'median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.8378378378378378
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_High', 'percent_with_earnings_75000_to_99999_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.8732394366197184
+
+==========
+>>> Itemset: {'median_earnings_some_college_or_associates_High', 'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'median_earnings_some_college_or_associates_High', 'percent_with_earnings_15000_to_24999_Low'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.821917808219178
+
+>>> Rule 2 : {'median_earnings_some_college_or_associates_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.8955223880597015
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} ---> {'median_earnings_some_college_or_associates_High'} 
+Confidence: 0.7142857142857143
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low', 'percent_with_earnings_10000_to_14999_Low'} 
+>>> Support: 0.22333333333333333 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_10000_to_14999_Low'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.8375
+
+>>> Rule 2 : {'percent_with_earnings_25000_to_34999_Low', 'percent_with_earnings_10000_to_14999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.8589743589743589
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_10000_to_14999_Low'} 
+Confidence: 0.7976190476190476
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_75000_to_99999_High', 'percent_with_earnings_10000_to_14999_Low'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_10000_to_14999_Low'} ---> {'percent_with_earnings_75000_to_99999_High'} 
+Confidence: 0.775
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_High', 'percent_with_earnings_10000_to_14999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.8493150684931506
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_75000_to_99999_High'} ---> {'percent_with_earnings_10000_to_14999_Low'} 
+Confidence: 0.7654320987654321
+
+==========
+>>> Itemset: {'percent_with_earnings_75000_to_99999_High', 'percent_with_earnings_25000_to_34999_Low', 'percent_with_earnings_10000_to_14999_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'percent_with_earnings_25000_to_34999_Low', 'percent_with_earnings_10000_to_14999_Low'} ---> {'percent_with_earnings_75000_to_99999_High'} 
+Confidence: 0.782051282051282
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_High', 'percent_with_earnings_10000_to_14999_Low'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.8356164383561644
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_10000_to_14999_Low'} 
+Confidence: 0.8026315789473684
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_75000_to_99999_High', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.22 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_75000_to_99999_High'} 
+Confidence: 0.7857142857142857
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_75000_to_99999_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.8148148148148148
+
+>>> Rule 3 : {'percent_with_earnings_75000_to_99999_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.8684210526315789
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_over_100000_High', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.21666666666666667 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.7738095238095237
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_over_100000_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9027777777777778
+
+>>> Rule 3 : {'percent_with_earnings_over_100000_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9420289855072463
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'female_median_earnings_High'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'median_earnings_High', 'female_full_time_median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9545454545454545
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'female_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.9402985074626865
+
+>>> Rule 3 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9545454545454545
+
+>>> Rule 4 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.8873239436619718
+
+==========
+>>> Itemset: {'median_earnings_High', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'median_earnings_High', 'female_full_time_median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9545454545454545
+
+>>> Rule 2 : {'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.9545454545454545
+
+>>> Rule 3 : {'median_earnings_High', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9692307692307691
+
+>>> Rule 4 : {'median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.9402985074626865
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9402985074626865
+
+>>> Rule 2 : {'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9545454545454545
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.875
+
+>>> Rule 4 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.9130434782608695
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9545454545454545
+
+>>> Rule 2 : {'median_earnings_High', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9692307692307691
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'median_earnings_High'} 
+Confidence: 0.875
+
+>>> Rule 4 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.9264705882352942
+
+==========
+>>> Itemset: {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_over_100000_High', 'percent_with_earnings_25000_to_34999_Low'} 
+>>> Support: 0.20666666666666667 
+
+>>> Rule 1 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_over_100000_High'} 
+Confidence: 0.8611111111111112
+
+>>> Rule 2 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_over_100000_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9393939393939393
+
+>>> Rule 3 : {'female_full_time_median_earnings_High', 'percent_with_earnings_over_100000_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9687499999999999
+
+>>> Rule 4 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_over_100000_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.9538461538461538
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'median_earnings_Low', 'female_median_earnings_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'median_earnings_Low', 'female_median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.8472222222222223
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'female_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'median_earnings_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.9104477611940299
+
+>>> Rule 4 : {'median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'female_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9242424242424243
+
+==========
+>>> Itemset: {'percent_with_earnings_75000_to_99999_Low', 'female_full_time_median_earnings_Low', 'median_earnings_Low', 'female_median_earnings_Low'} 
+>>> Support: 0.21 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'median_earnings_Low', 'female_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.875
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'female_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.8873239436619718
+
+>>> Rule 3 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'median_earnings_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.9130434782608695
+
+>>> Rule 4 : {'median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'female_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9402985074626865
+
+==========
+>>> Itemset: {'percent_with_earnings_75000_to_99999_Low', 'female_full_time_median_earnings_Low', 'median_earnings_Low', 'male_median_earnings_Low'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'median_earnings_Low', 'male_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.9242424242424243
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.9242424242424243
+
+>>> Rule 3 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'median_earnings_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.8840579710144927
+
+>>> Rule 4 : {'median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.9384615384615385
+
+==========
+>>> Itemset: {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'percent_with_earnings_75000_to_99999_Low', 'median_earnings_Low'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.8955223880597015
+
+>>> Rule 2 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'median_earnings_Low'} ---> {'percent_with_earnings_15000_to_24999_High'} 
+Confidence: 0.8695652173913043
+
+>>> Rule 3 : {'female_full_time_median_earnings_Low', 'percent_with_earnings_15000_to_24999_High', 'percent_with_earnings_75000_to_99999_Low'} ---> {'median_earnings_Low'} 
+Confidence: 0.8955223880597015
+
+>>> Rule 4 : {'percent_with_earnings_15000_to_24999_High', 'percent_with_earnings_75000_to_99999_Low', 'median_earnings_Low'} ---> {'female_full_time_median_earnings_Low'} 
+Confidence: 0.967741935483871
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} 
+>>> Support: 0.21333333333333335 
+
+>>> Rule 1 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9014084507042254
+
+>>> Rule 2 : {'median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.955223880597015
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.927536231884058
+
+>>> Rule 4 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9411764705882354
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_75000_to_99999_High', 'female_median_earnings_High'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_median_earnings_High'} ---> {'percent_with_earnings_75000_to_99999_High'} 
+Confidence: 0.8591549295774649
+
+>>> Rule 2 : {'median_earnings_High', 'percent_with_earnings_75000_to_99999_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9682539682539684
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_75000_to_99999_High', 'female_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.8970588235294118
+
+>>> Rule 4 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_75000_to_99999_High'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9384615384615385
+
+==========
+>>> Itemset: {'median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low', 'female_median_earnings_Low'} 
+>>> Support: 0.2 
+
+>>> Rule 1 : {'median_earnings_Low', 'male_median_earnings_Low', 'female_median_earnings_Low'} ---> {'percent_with_earnings_75000_to_99999_Low'} 
+Confidence: 0.9230769230769231
+
+>>> Rule 2 : {'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low', 'female_median_earnings_Low'} ---> {'median_earnings_Low'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'female_median_earnings_Low'} ---> {'male_median_earnings_Low'} 
+Confidence: 0.8955223880597015
+
+>>> Rule 4 : {'median_earnings_Low', 'percent_with_earnings_75000_to_99999_Low', 'male_median_earnings_Low'} ---> {'female_median_earnings_Low'} 
+Confidence: 0.9230769230769231
+
+==========
+>>> Itemset: {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} 
+>>> Support: 0.20333333333333334 
+
+>>> Rule 1 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'female_median_earnings_High'} ---> {'percent_with_earnings_25000_to_34999_Low'} 
+Confidence: 0.9682539682539684
+
+>>> Rule 2 : {'median_earnings_High', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'percent_with_earnings_15000_to_24999_Low'} 
+Confidence: 0.9682539682539684
+
+>>> Rule 3 : {'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'median_earnings_High'} 
+Confidence: 0.9682539682539684
+
+>>> Rule 4 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'female_full_time_median_earnings_High', 'percent_with_earnings_25000_to_34999_Low'} ---> {'female_median_earnings_High'} 
+Confidence: 0.9682539682539684
+
+>>> Rule 5 : {'median_earnings_High', 'percent_with_earnings_15000_to_24999_Low', 'percent_with_earnings_25000_to_34999_Low', 'female_median_earnings_High'} ---> {'female_full_time_median_earnings_High'} 
+Confidence: 0.953125
+
+Rule Set Number: 116
+
+========== min_sup: 0.50 & min_conf: 0.50 ==========
+Rule Set Number: 0
+
+========== min_sup: 0.80 & min_conf: 0.50 ==========
+Rule Set Number: 0
+
