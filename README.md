@@ -33,14 +33,14 @@ The Data Analyse and Mining Project for the course ANLY-501 (COSC-587)
     - [ ] Silhouette Coefficient to access the quality of cluster. `(Armaan)`
     - [ ] Plot the cluster. `(Armaan)`
 4. Association Rules / Frequent ItemSet Mining Analysis (15%)
-    - [ ] Run Association rule mining at least 3 support levels. `(Ken)`
+    - [x] Run Association rule mining at least 3 support levels. `(Ken)`
 5. Hypothesis Testing (30%)
     - [ ] Write at least 3 hypotheses. `(Oliver)`
     - [ ] Test hypotheses. `(Oliver)`
     - [ ] Use Cross Validation. `(Oliver)`
     - [ ] Explain how and why we apply selected methods. `(Oliver)`
 6. (Additional) LOF Outliers Identify (10%)
-    - [ ] Use LOF to identify outlier. `(Ken)`
+    - [x] Use LOF to identify outlier. `(Ken)`
 
 
 ### Project 1
