@@ -35,14 +35,14 @@ class Histogram:
     def hist(self):
         i = 0
         for column in self.data_frame.columns:
-            if self.data_frame.dtypes[i] == 'float64':
+            if self.data_frame.dtypes[i] == 'int64':
                 data = self.data_frame[column]
                 data_list = list(data[pd.notnull(data)])
                 # %matplotlib inline
                 plt.figure()
                 plt.hist(data_list)
                 plt.title(column)
-                # plt.show()
-                print(str(column) + "plotted")
+                plt.show()
+                print(str(column) + " plotted")
             i += 1
 

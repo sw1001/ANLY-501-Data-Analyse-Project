@@ -19,8 +19,8 @@ class HistCor:
 
     # main method
     def main(self):
-        # hg = Histogram(self.options)
-        # hg.hist()
+        hg = Histogram(self.options)
+        hg.hist()
         cr = Correlation(self.options)
         cr.corr()
 

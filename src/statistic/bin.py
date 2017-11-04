@@ -1,4 +1,5 @@
 import pandas as pd
+import csv
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -37,9 +38,10 @@ class Bin:
     def bin(self):
         i = 0
         for column in self.data_frame.columns:
-            if self.data_frame.dtypes[i] == 'float64':
+            if self.data_frame.dtypes[i] == 'int64':
                 # bin the data
                 bins = pd.cut(self.data_frame[column], 10, retbins=True, labels=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
                 print('Bins for ' + str(column) + ' is: ')
-                print(bins)
+                print(bins[0])
+                bins[0].to_csv(str(column) + '_bin.csv')
             i += 1
