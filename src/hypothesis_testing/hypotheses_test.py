@@ -74,11 +74,11 @@ def main():
     svr.fit(X_train, y_train)
     lm.fit(X_train, y_train)
 
-    print(svr.score(X_test, y_test))
-    print(lm.score(X_test, y_test))
+    print('Support Vector Regressor Result Scores:' + str(svr.score(X_test, y_test)))
+    print('Linear Regressor Result Scores:' + str(lm.score(X_test, y_test)))
 
     # Use Random Forest Regression to
-    print('Build Random Forest Regressor to')
+    print('Build Random Forest Regressor')
     zillow_y_train = zillow_data['lotsizeSqFt']
     zillow_x_train = zillow_data[['bathrooms', 'bedrooms']]
     zillow_x_train['rooms'] = zillow_data['bathrooms'] + zillow_data['bedrooms']
@@ -87,7 +87,7 @@ def main():
 
     regr = RandomForestRegressor(max_depth=3, random_state=0)
     regr.fit(X_train, y_train)
-    print(regr.score(X_test, y_test))
+    print('RandomForestRegressor Result Scores:' + str(regr.score(X_test, y_test)))
 
     # Apply a simple xgboost model and do Cross Validata
     zillow_y_train = zillow_data['amount']
