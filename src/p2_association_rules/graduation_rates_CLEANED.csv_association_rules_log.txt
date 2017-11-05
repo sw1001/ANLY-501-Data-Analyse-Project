@@ -1,0 +1,1381 @@
+========== Data Information ==========
+Original data: 322 rows
+Sample data: 322 rows
+
+========== Compute: min_sup: 0.20 & min_conf: 0.20 ==========
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.7857142857142857 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.961977186311787
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9405204460966543
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7035573122529645
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6459627329192547 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8221343873517787
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.936936936936937
+
+>>> Rule 3 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9285714285714286
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.6768060836501901
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.6708074534161491 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8212927756653993
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 0.972972972972973
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.8674698795180724
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8018018018018019
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.6617100371747213
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6925465838509317 
+
+>>> Rule 1 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8289962825278812
+
+>>> Rule 2 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 0.9955357142857143
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.8955823293172691
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7946428571428572
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7148594377510041
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7035573122529645
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6459627329192547 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8221343873517787
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.9629629629629629
+
+>>> Rule 4 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9327354260089685
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8557692307692308
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8240740740740741
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7982062780269059
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8557692307692308
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 5 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+========== Summary:  min_sup: 0.20 & min_conf: 0.20 ==========
+Rule Set Number: 16
+Most frequent itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} with support 0.7857142857142857
+
+========== Compute: min_sup: 0.20 & min_conf: 0.50 ==========
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.7857142857142857 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.961977186311787
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9405204460966543
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7035573122529645
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6459627329192547 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8221343873517787
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.936936936936937
+
+>>> Rule 3 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9285714285714286
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.6768060836501901
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.6708074534161491 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8212927756653993
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 0.972972972972973
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.8674698795180724
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8018018018018019
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.6617100371747213
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6925465838509317 
+
+>>> Rule 1 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8289962825278812
+
+>>> Rule 2 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 0.9955357142857143
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.8955823293172691
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7946428571428572
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7148594377510041
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7035573122529645
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6459627329192547 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8221343873517787
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.9629629629629629
+
+>>> Rule 4 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9327354260089685
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8557692307692308
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8240740740740741
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7982062780269059
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8557692307692308
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 5 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+========== Summary:  min_sup: 0.20 & min_conf: 0.50 ==========
+Rule Set Number: 16
+Most frequent itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} with support 0.7857142857142857
+
+========== Compute: min_sup: 0.20 & min_conf: 0.80 ==========
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.7857142857142857 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.961977186311787
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9405204460966543
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6459627329192547 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8221343873517787
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.936936936936937
+
+>>> Rule 3 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9285714285714286
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.6708074534161491 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8212927756653993
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 0.972972972972973
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.8674698795180724
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8018018018018019
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6925465838509317 
+
+>>> Rule 1 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8289962825278812
+
+>>> Rule 2 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 0.9955357142857143
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.8955823293172691
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6459627329192547 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8221343873517787
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.9629629629629629
+
+>>> Rule 4 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9327354260089685
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8557692307692308
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8240740740740741
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8557692307692308
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 5 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+========== Summary:  min_sup: 0.20 & min_conf: 0.80 ==========
+Rule Set Number: 16
+Most frequent itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} with support 0.7857142857142857
+
+========== Compute: min_sup: 0.50 & min_conf: 0.20 ==========
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.7857142857142857 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.961977186311787
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9405204460966543
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7035573122529645
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6459627329192547 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8221343873517787
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.936936936936937
+
+>>> Rule 3 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9285714285714286
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.6768060836501901
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.6708074534161491 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8212927756653993
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 0.972972972972973
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.8674698795180724
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8018018018018019
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.6617100371747213
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6925465838509317 
+
+>>> Rule 1 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8289962825278812
+
+>>> Rule 2 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 0.9955357142857143
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.8955823293172691
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7946428571428572
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7148594377510041
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7035573122529645
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6459627329192547 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8221343873517787
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.9629629629629629
+
+>>> Rule 4 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9327354260089685
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8557692307692308
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8240740740740741
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7982062780269059
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8557692307692308
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 5 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+========== Summary:  min_sup: 0.50 & min_conf: 0.20 ==========
+Rule Set Number: 16
+Most frequent itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} with support 0.7857142857142857
+
+========== Compute: min_sup: 0.50 & min_conf: 0.50 ==========
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.7857142857142857 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.961977186311787
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9405204460966543
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7035573122529645
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6459627329192547 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8221343873517787
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.936936936936937
+
+>>> Rule 3 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9285714285714286
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.6768060836501901
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.6708074534161491 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8212927756653993
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 0.972972972972973
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.8674698795180724
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8018018018018019
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.6617100371747213
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6925465838509317 
+
+>>> Rule 1 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8289962825278812
+
+>>> Rule 2 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 0.9955357142857143
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.8955823293172691
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7946428571428572
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7148594377510041
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7035573122529645
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6459627329192547 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8221343873517787
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.9629629629629629
+
+>>> Rule 4 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9327354260089685
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8557692307692308
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8240740740740741
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.7982062780269059
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8557692307692308
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 5 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+========== Summary:  min_sup: 0.50 & min_conf: 0.50 ==========
+Rule Set Number: 16
+Most frequent itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} with support 0.7857142857142857
+
+========== Compute: min_sup: 0.50 & min_conf: 0.80 ==========
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.7857142857142857 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.961977186311787
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9405204460966543
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6459627329192547 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8221343873517787
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.936936936936937
+
+>>> Rule 3 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9285714285714286
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.6708074534161491 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8212927756653993
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 0.972972972972973
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.8674698795180724
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8018018018018019
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6925465838509317 
+
+>>> Rule 1 : {'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8289962825278812
+
+>>> Rule 2 : {'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 0.9955357142857143
+
+>>> Rule 3 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.8955823293172691
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.6459627329192547 
+
+>>> Rule 1 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 0.8221343873517787
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 0.9629629629629629
+
+>>> Rule 4 : {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 0.9327354260089685
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8557692307692308
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8240740740740741
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_high_school_graduate_or_higher_High', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+==========
+>>> Itemset: {'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} 
+>>> Support: 0.5527950310559007 
+
+>>> Rule 1 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_less_than_9th_grade_Mean'} 
+Confidence: 1.0
+
+>>> Rule 2 : {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_high_school_graduate_or_higher_High'} 
+Confidence: 0.8557692307692308
+
+>>> Rule 3 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_graduate_or_professional_degree_Mean'} 
+Confidence: 1.0
+
+>>> Rule 4 : {'percent_high_school_graduate_or_higher_High', 'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean'} ---> {'percent_bachelors_degree_or_higher_Mean'} 
+Confidence: 1.0
+
+>>> Rule 5 : {'percent_high_school_graduate_or_higher_High', 'percent_graduate_or_professional_degree_Mean', 'percent_less_than_9th_grade_Mean', 'percent_bachelors_degree_or_higher_Mean'} ---> {'percent_associates_degree_Mean'} 
+Confidence: 1.0
+
+========== Summary:  min_sup: 0.50 & min_conf: 0.80 ==========
+Rule Set Number: 16
+Most frequent itemset: {'percent_associates_degree_Mean', 'percent_graduate_or_professional_degree_Mean', 'percent_bachelors_degree_or_higher_Mean'} with support 0.7857142857142857
+
+========== Compute: min_sup: 0.80 & min_conf: 0.20 ==========
+========== Summary:  min_sup: 0.80 & min_conf: 0.20 ==========
+Rule Set Number: 0
+Most frequent itemset: None with support -1
+
+========== Compute: min_sup: 0.80 & min_conf: 0.50 ==========
+========== Summary:  min_sup: 0.80 & min_conf: 0.50 ==========
+Rule Set Number: 0
+Most frequent itemset: None with support -1
+
+========== Compute: min_sup: 0.80 & min_conf: 0.80 ==========
+========== Summary:  min_sup: 0.80 & min_conf: 0.80 ==========
+Rule Set Number: 0
+Most frequent itemset: None with support -1
+

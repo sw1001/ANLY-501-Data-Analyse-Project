@@ -3,6 +3,8 @@
 ## Introduction and Overview
 The Data Analyse and Mining Project for the course ANLY-501 (COSC-587)
 
+`The Final Report` of each project is in the folder - [docs](https://github.com/WuZhuoran/ANLY-501-Data-Analyse-Project/tree/master/docs)
+
 ## Instructor
 [@Lisa Singh](http://people.cs.georgetown.edu/~singh/)
 
