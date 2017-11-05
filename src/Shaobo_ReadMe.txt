@@ -1,2 +1,11 @@
-The python code for project 2 includes: histos_and_correls, statistic (the first two parts)
-In each folder, you will find a ReadMe.txt file to show how to run the code
+statistic:
+Copy and paste the data set (i.e. zillow_data.csv) under the same directory
+Double click local .bat to enter cmd in current directory
+Run stats_bin.py in python command line environment as following:
+python stats_bin.py zillow_data.csv
+
+histos_and_correls:
+Copy and paste the data set (i.e. zillow_data.csv) under the same directory
+Double click local .bat to enter cmd in current directory
+Run hist_cor.py in python command line environment as following:
+python hist_cor.py zillow_data.csv
