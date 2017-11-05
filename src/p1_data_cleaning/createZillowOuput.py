@@ -23,7 +23,7 @@ def main():
     df3 = pd.read_csv("../../input/raw/Zillow_House_Update_40000.csv")
     df = pd.merge(df12, df3, on="zpid") # Merge the third dataframe to the previously merged dataframe.
     
-    df.to_csv("../../input/Zillow_House_Output.csv", sep=",") # Write the resulting dataframe to a csv
+    df.to_csv("../../input/raw/Zillow_House_Output.csv", sep=",") # Write the resulting dataframe to a csv
 
 
 if __name__ == "__main__":
