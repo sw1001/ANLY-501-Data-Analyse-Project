@@ -33,10 +33,10 @@ class Correlation:
     def get_input_data(self):
         return self.data_frame
 
-    # correlation
+    # correlations
     def corr(self):
         print(self.data_frame.corr(method='pearson'))
-        # For zillow data, pick bathrooms, finishedSqFt and mount
+        # for zillow data, pick bathrooms, finishedSqFt and mount
         if self.file_name == 'Zillow_Cleaned.csv':
             plt.figure()
             plt.suptitle('Scatter plots of correlations in Zillow data')
@@ -53,6 +53,7 @@ class Correlation:
             plt.xlabel("finishedSqFt")
             plt.ylabel("amount")
             plt.show()
+        # for earning info data, pick female_median_earnings, male_median_earnings, median_earnings_bachelor_degree
         if self.file_name == 'earning_info.csv':
             plt.figure()
             plt.suptitle('Scatter plots of correlations in earning info data')
