@@ -15,7 +15,8 @@ def binning(dataset, column_name):
 
 	dataset = list(dataset)
 	mean = sum(dataset)/len(dataset)
-	std = stdev(dataset)
+	# std = stdev(dataset)	# Overflow
+	std = np.std(dataset)
 
 	binned_dataset = []
 	for i, d in enumerate(dataset):
