@@ -29,7 +29,7 @@ def dbscan():
     
     #plt.style.use("ggplot")
     
-    X = pd.read_csv("crime_counts_CLEANED.csv")
+    X = pd.read_csv("/input/clean/crime_counts_CLEANED.csv")
     
     #Since "City" and "States" are strings, we convert them to numeric representations
     #using LabelEncoder().

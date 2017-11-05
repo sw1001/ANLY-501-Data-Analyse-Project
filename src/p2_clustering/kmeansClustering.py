@@ -2,7 +2,8 @@
 """
 Created on Mon Oct 30 15:34:39 2017
 
-We will perform the kmeans clustering on Zillow_Cleaned.csv.
+We will perform the kmeans clustering on "Zillow_Cleaned.csv" and will cluster
+the data for attributes ranging from "bathrooms" to "States".
 We will also display the silhouette score.
 
 @author: Armaan Khullar
@@ -26,7 +27,7 @@ from pprint import pprint
 from sklearn.metrics import silhouette_samples, silhouette_score
 
 def kmeans():
-    myData = pd.read_csv('Zillow_Cleaned.csv' , sep=',', encoding='latin1')
+    myData = pd.read_csv('/input/clean/Zillow_Cleaned.csv' , sep=',', encoding='latin1')
     #output = open("kmeans_output.txt", "w")
     x= myData.iloc[:,2:19].values #Get values ranging from "bathrooms" to "State"
     

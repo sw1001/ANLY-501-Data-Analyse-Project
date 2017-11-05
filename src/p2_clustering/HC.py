@@ -25,7 +25,7 @@ from pprint import pprint
 
 
 def HC():
-    myData = pd.read_csv('graduation_rates_CLEANED.csv')
+    myData = pd.read_csv('/input/clean/graduation_rates_CLEANED.csv')
     
     #Converting the values of "State" and "City", which are strings, to numeric representations.
     lb = LabelEncoder()
