@@ -6,3 +6,8 @@
 - Average House Price - Earning Information (Only in California)
 - Radius of each node based on standard deviation of house prices in the city
 - Scatter plot by D3 Javascript
+
+## Plot-2: Scatter plot ##
+- Average House Price - Crime rate (Only in California)
+- Radius of each node based on standard deviation of house prices in the city
+- Scatter plot by D3 Javascript
