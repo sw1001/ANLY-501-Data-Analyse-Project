@@ -6,10 +6,14 @@
 - Average House Price - Earning Information (Only in California)
 - Radius of each node based on standard deviation of house prices in the city
 - Scatter plot by D3 Javascript
-![Screenshot](/plot-1/Scatter-1.png?raw=true "Price - Earning")
+<p align="center">
+  <img width="80%" src="https://github.com/WuZhuoran/ANLY-501-Data-Analyse-Project/blob/kk-visualization/src/p3_visualization/plot-1/Scatter-1.png?raw=true">
+</p>
 
 ## Plot-2: Scatter plot ##
 - Average House Price - Crime rate (Only in California)
 - Radius of each node based on standard deviation of house prices in the city
 - Scatter plot by D3 Javascript
-![Screenshot](/plot-2/Scatter-2.png?raw=true "Price - Crime Rate")
+<p align="center">
+  <img width="80%" src="https://github.com/WuZhuoran/ANLY-501-Data-Analyse-Project/blob/kk-visualization/src/p3_visualization/plot-2/Scatter-2.png?raw=true">
+</p>
