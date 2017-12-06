@@ -3,6 +3,8 @@
 ## Introduction and Overview
 The Data Analyse and Mining Project for the course ANLY-501 (COSC-587)
 
+`The Final Report` of each project is in the folder - [docs](https://github.com/WuZhuoran/ANLY-501-Data-Analyse-Project/tree/master/docs)
+
 ## Instructor
 [@Lisa Singh](http://people.cs.georgetown.edu/~singh/)
 
@@ -19,28 +21,28 @@ The Data Analyse and Mining Project for the course ANLY-501 (COSC-587)
 ## Project Task Introduction
 
 ### Project 2
-> Due on Nov 3rd 11:59PM
+> Due on Nov 5th 10:00PM
 
 1. Basic Statistical Analysis and data cleaning insight (15%)
-    - [ ] Determine the mean, median and standard deviation of at least 10 attributes. `(Shawn)`
-    - [ ] Clean data. `(Shawn)`
-    - [ ] Bin the data at least 1 attribute. `(Shawn)`
+    - [x] Determine the mean, median and standard deviation of at least 10 attributes. `(Shawn)`
+    - [x] Clean data. `(Shawn)`
+    - [x] Bin the data at least 1 attribute. `(Shawn)`
 2. Histograms and Correlations (10%)
-    - [ ] Histogram Plot at least 3 attributes. `(Shawn)`
-    - [ ] Identify 3 quantitative variables. Find the correlation. `(Shawn)`
+    - [x] Histogram Plot at least 3 attributes. `(Shawn)`
+    - [x] Identify 3 quantitative variables. Find the correlation. `(Shawn)`
 3. Cluster Analysis (20%)
-    - [ ] 3 cluster analyses. `(Armaan)`
-    - [ ] Silhouette Coefficient to access the quality of cluster. `(Armaan)`
-    - [ ] Plot the cluster. `(Armaan)`
+    - [x] 3 cluster analyses. `(Armaan)`
+    - [x] Silhouette Coefficient to access the quality of cluster. `(Armaan)`
+    - [x] Plot the cluster. `(Armaan)`
 4. Association Rules / Frequent ItemSet Mining Analysis (15%)
-    - [ ] Run Association rule mining at least 3 support levels. `(Ken)`
+    - [x] Run Association rule mining at least 3 support levels. `(Ken)`
 5. Hypothesis Testing (30%)
-    - [ ] Write at least 3 hypotheses. `(Oliver)`
-    - [ ] Test hypotheses. `(Oliver)`
-    - [ ] Use Cross Validation. `(Oliver)`
-    - [ ] Explain how and why we apply selected methods. `(Oliver)`
+    - [x] Write at least 3 hypotheses. `(Oliver)`
+    - [x] Test hypotheses. `(Oliver)`
+    - [x] Use Cross Validation. `(Oliver)`
+    - [x] Explain how and why we apply selected methods. `(Oliver)`
 6. (Additional) LOF Outliers Identify (10%)
-    - [ ] Use LOF to identify outlier. `(Ken)`
+    - [x] Use LOF to identify outlier. `(Ken)`
 
 
 ### Project 1

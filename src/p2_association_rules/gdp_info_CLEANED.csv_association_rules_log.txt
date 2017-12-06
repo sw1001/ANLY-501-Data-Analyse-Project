@@ -1,0 +1,49 @@
+========== Data Information ==========
+Original data: 5369 rows
+Sample data: 3000 rows
+
+========== Compute: min_sup: 0.20 & min_conf: 0.20 ==========
+========== Summary:  min_sup: 0.20 & min_conf: 0.20 ==========
+Rule Set Number: 0
+Most frequent itemset: None with support -1
+
+========== Compute: min_sup: 0.20 & min_conf: 0.50 ==========
+========== Summary:  min_sup: 0.20 & min_conf: 0.50 ==========
+Rule Set Number: 0
+Most frequent itemset: None with support -1
+
+========== Compute: min_sup: 0.20 & min_conf: 0.80 ==========
+========== Summary:  min_sup: 0.20 & min_conf: 0.80 ==========
+Rule Set Number: 0
+Most frequent itemset: None with support -1
+
+========== Compute: min_sup: 0.50 & min_conf: 0.20 ==========
+========== Summary:  min_sup: 0.50 & min_conf: 0.20 ==========
+Rule Set Number: 0
+Most frequent itemset: None with support -1
+
+========== Compute: min_sup: 0.50 & min_conf: 0.50 ==========
+========== Summary:  min_sup: 0.50 & min_conf: 0.50 ==========
+Rule Set Number: 0
+Most frequent itemset: None with support -1
+
+========== Compute: min_sup: 0.50 & min_conf: 0.80 ==========
+========== Summary:  min_sup: 0.50 & min_conf: 0.80 ==========
+Rule Set Number: 0
+Most frequent itemset: None with support -1
+
+========== Compute: min_sup: 0.80 & min_conf: 0.20 ==========
+========== Summary:  min_sup: 0.80 & min_conf: 0.20 ==========
+Rule Set Number: 0
+Most frequent itemset: None with support -1
+
+========== Compute: min_sup: 0.80 & min_conf: 0.50 ==========
+========== Summary:  min_sup: 0.80 & min_conf: 0.50 ==========
+Rule Set Number: 0
+Most frequent itemset: None with support -1
+
+========== Compute: min_sup: 0.80 & min_conf: 0.80 ==========
+========== Summary:  min_sup: 0.80 & min_conf: 0.80 ==========
+Rule Set Number: 0
+Most frequent itemset: None with support -1
+
